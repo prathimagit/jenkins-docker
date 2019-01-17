@@ -1,0 +1,12 @@
+pipeline {
+    agent {
+        docker { image 'prathima' }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
+    }
+}
